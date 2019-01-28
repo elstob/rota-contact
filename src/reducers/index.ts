@@ -13,7 +13,7 @@ export function rootReducer(
   action: ContactAction
 ): ContactState {
   switch (action.type) {
-    case "CONTACT_REQUEST":
+    case "CONTACT_REQUEST_SUCCESS":
       return { ...action.payload };
     default:
       return state;

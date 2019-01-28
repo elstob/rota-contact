@@ -28,9 +28,9 @@ describe("Reducers", () => {
     global.localStorage = new LocalStorageMock();
   }
 
-  it("can store a contact request", () => {
+  it("can store a successful contact request", () => {
     const action = {
-      type: "CONTACT_REQUEST",
+      type: "CONTACT_REQUEST_SUCCESS",
       payload: {
         firstName: "David",
         lastName: "Elstob",
